@@ -4,4 +4,6 @@ My STAT 418 final project took at look at how the significance of offensive & de
 
 On this main page i have the following:
 - Web_Scraping+EDA Folder: A folder with all pertinent info for how i retrieved, cleaned & explored the data
-- Ordinal Model Folder: A folder w
+- Ordinal Model Folder: A folder with the model building + functions eventually applied for the shiny application
+- Shiny_application: A folder breaking down the deployment of the interactive app hosted on shinyapps.io
+- MASTER_FILE.R: an r File will all the code used (this is also broken down in each folder)
