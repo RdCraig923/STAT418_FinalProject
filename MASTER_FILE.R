@@ -77,6 +77,7 @@ predict_postszn_success <- function(Offense, Defense, model) {
 }
 predict_postszn_success(0, 0, simple_model)
 
+
 postszn_probs <- function(Offense, Defense, model) {
   new_data <- data.frame(POFF = Offense, PDEF = Defense)
   predicted_probs <- predict(model, newdata = new_data, type = "prob")
