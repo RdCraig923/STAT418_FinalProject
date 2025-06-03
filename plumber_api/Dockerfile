@@ -7,6 +7,7 @@ COPY . /app
 
 RUN R -e "install.packages(c('MASS', 'ggplot2', 'tibble', 'dplyr'))"
 
-EXPOSE 8000
+# Expose the default Cloud Run port (8080)
+EXPOSE 8080
 
-ENTRYPOINT ["R", "-e", "pr <- plumber::plumb('plumber.R'); pr$run(host='0.0.0.0', port=8000)"]
+CMD ["Rscript", "deploy.r"]
